@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <script type="text/javascript" src="myscripts.js" defer></script>
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="main-card">
+      <div class="main-card-content-column">
+        <div class="image-circle">
+          <img src="images/icon-star.svg" alt="" height="20px" width="20px">
+        </div>
+
+        <div class="card-title">How did we do?</div>
+        <div class="card-content">
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </div>
+
+        <div class="choice-row">
+          <div id="1" class="circle-item" onclick="invoke(this)">1</div>
+          <div id="2" class="circle-item" onclick="invoke(this)">2</div>
+          <div id="3" class="circle-item" onclick="invoke(this)">3</div>
+          <div id="4" class="circle-item" onclick="invoke(this)">4</div>
+          <div id="5" class="circle-item" onclick="invoke(this)">5</div>
+        </div>
+
+        <div class="submit-button" onclick="submitClickHandler()">SUBMIT</div>
+      </div>
+    </div>
+
+
+    <div class="success-card">
+      <div class="success-main-column-content">
+        <div class="container">
+          <img src="images/illustration-thank-you.svg" alt="" style="margin-bottom: 20px;">
+        </div>
+        <div class="container">
+          <div class="you-selected-text">You selected 4 out of 5</div>
+        </div>
+        <div class="container">
+          <div class="card-title">Thank You!</div>
+        </div>
+
+        <div class="card-content align-center">
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!
+        </div>
+
+
+      </div>
+    </div>
+</body>
+
+</html>
+
+<!-- Rating state start
+
+  How did we do?
+
+  Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!
+
+  1 2 3 4 5
+
+  Submit
+
+Rating state end
+
+Thank you state start 
+
+  You selected  Add rating here  out of 5
+
+  Thank you!
+
+  We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!
+
+  Thank you state end -->
